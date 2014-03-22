@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-	<title>fullPage.js One Page Scroll Sites</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
-	<meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
-	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
-	<meta name="Resource-type" content="Document" />
-
-	
+	<title>Web Application Development Workflow</title>
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
-
-	
 	<style>
-
+		h1 {
+			font-size: 5em;	
+			font-family: arial,helvetica;
+			color: #fff;
+			margin:0;
+			padding:0;
+		}
 		/* Sections
 		 * --------------------------------------- */
+		#section0, #section1, #section2, #section3, #section4, #section5, #section6, #section7
+		 {
+			background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#636F8F));
+			background: -webkit-linear-gradient(#969AC6, #636F8F);
+			background: linear-gradient(#969AC6,#636F8F);
+		}
 		#section0 img,
 		#section1 img{
 			margin: 20px 0 0 0;
@@ -35,13 +38,8 @@
 			margin: 0 auto;
 			font-size: 1.5em;
 		}
-		.twitter-share-button{
-			position: absolute;
-			z-index: 99;
-			right: 149px;
-			top: 9px;
-		}
-
+		/* Sections
+		 * --------------------------------------- */
 	</style>
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -57,9 +55,10 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			var pepe = $.fn.fullpage({
-				slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
 				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-				menu: '#menu'
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Intro', 'Chrome', 'Sublime', 'GitHub']
 			});
 			
 		});
@@ -68,79 +67,18 @@
 </head>
 <body>
 
-<select id="demosMenu">
-  <option id="background" selected>Choose Demo</option>
-  <option id="background">Background images</option>
-  <option id="backgroundVideo">Background video</option>
-  <option id="gradientBackgrounds">Gradient backgrounds</option>
-  <option id="looping">Looping</option>
-  <option id="noAnchor">No anchor links</option>
-  <option id="scrollingSpeed">Scrolling speed</option>
-  <option id="easing">Easing</option>
-  <option id="callbacks">Callbacks</option>
-  <option id="css3">CSS3</option>
-  <option id="continuous">Continuous scrolling</option>
-  <option id="normalScroll">Normal scrolling</option>
-  <option id="scrolling">Scroll inside sections and slides</option>
-  <option id="navigationV">Vertical navigation dots</option>
-  <option id="navigationH">Horizontal navigation dots</option>
-  <option id="fixedHeaders">Fixed headers</option>
-  <option id="apple">Apple iPhone demo (animations)</option>
-</select>
-
-<ul id="menu">
-	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
-</ul>
-
-<div class="section " id="section0">
-	<h1>fullPage.js</h1>
-	<p>Create Beautiful Fullscreen Scrolling Websites</p>
-	<img src="imgs/fullPage.png" alt="fullPage" />
+<div class="section" id="section0">
+	<img src="imgs/Enginerring_Logo_of_PSU.png" alt="The Engineering Faculty" />
+	<h1>Web Application Development Workflow</h1>
+	<div>ราชศักดิ์ บูรณะพาณิชย์กิจ</div>
+	<div>bratchasak@eng.psu.ac.th</div>
+	<div>พัฒนาวดี ศิวติณฑุโก</div>
+	<div>spattana@eng.psu.ac.th</div>
 </div>
+
 <div class="section" id="section1">
-    <div class="slide">
-		<div class="intro">
-			<h1>Create Sliders</h1>
-			<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
-			<img src="imgs/slider.png" alt="slider" />
-		</div>
-		
-	</div>
-    <div class="slide">
-		<div class="intro">
-			<img src="imgs/1.png" alt="simple" />
-			<h1>Simple</h1>
-			<p>Easy to use. Configurable and customizable.</p>
-		</div>
-	</div>
-    <div class="slide">
-		<div class="intro">
-			<img src="imgs/2.png" alt="Cool" />
-			<h1>Cool</h1>
-			<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
-		</div>
-	</div>
-    <div class="slide">
-		<div class="intro">
-			<img src="imgs/3.png" alt="Compatible" />
-			<h1>Compatible</h1>
-			<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
-		</div>
-	</div>
-</div>
-<div class="section" id="section2">
 	<div class="intro">
-		<h1>Example</h1>
-		<p>HTML markup example to define 4 sections.</p>
-		<img src="imgs/example2.png" alt="example" />
-	</div>
-</div>
-<div class="section" id="section3">
-	<div class="intro">
-		<h1>Working On Tablets</h1>
+		<h1>Outline</h1>
 		<p>
 			Designed to fit to different screen sizes as well as tablet and mobile devices.
 			<br /><br /><br /><br /><br /><br />
@@ -148,6 +86,7 @@
 	</div>
 	<img src="imgs/tablets.png" alt="tablets" />
 </div>
+
 <div class="section" id="section4">
 	<div class="intro">
 		<h1>Web Application Development Workflow</h1>
@@ -264,7 +203,7 @@
 </div>
 <div class="section" id="section22">
 	<div class="intro">
-		<h1>Reference</h1>
+		<h1>links & resources</h1>
 		<li>Chrome Browser: www.google.com/chrome/</li>
 		<li>Chrome Web Store: https://chrome.google.com/webstore/category/extensions‎</li>
 		<li>Git: git-scm.com/</li>
@@ -273,11 +212,43 @@
 		<li>Package Control: https://sublime.wbond.net/‎</li>
 	</div>
 </div>
-<div class="section" id="section22">
+
+<div class="section" id="section99">
+    <div class="slide">
+		<div class="intro">
+			<h1>Create Sliders</h1>
+			<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
+			<img src="imgs/slider.png" alt="slider" />
+		</div>
+		
+	</div>
+    <div class="slide">
+		<div class="intro">
+			<img src="imgs/1.png" alt="simple" />
+			<h1>Simple</h1>
+			<p>Easy to use. Configurable and customizable.</p>
+		</div>
+	</div>
+    <div class="slide">
+		<div class="intro">
+			<img src="imgs/2.png" alt="Cool" />
+			<h1>Cool</h1>
+			<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
+		</div>
+	</div>
+    <div class="slide">
+		<div class="intro">
+			<img src="imgs/3.png" alt="Compatible" />
+			<h1>Compatible</h1>
+			<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
+		</div>
+	</div>
+</div>
+<div class="section" id="section100">
 	<div class="intro">
-		<h1></h1>
-		<li>bratchasak@eng.psu.ac.th</li>
-		<li>spattana@eng.psu.ac.th</li>
+		<h1>Example</h1>
+		<p>HTML markup example to define 4 sections.</p>
+		<img src="imgs/example2.png" alt="example" />
 	</div>
 </div>
 
