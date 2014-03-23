@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Web Application Development Workflow</title>
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="css/examples.css" />
 	<style>
-		h1 {
-			font-size: 5em;	
-			font-family: arial,helvetica;
-			color: #fff;
-			margin:0;
-			padding:0;
-		}
 		/* Sections
 		 * --------------------------------------- */
 		#section0, #section1, #section2, #section3, #section4, #section5, #section6, #section7
@@ -24,9 +16,9 @@
 		#section0 img,
 		#section1 img{
 			margin: 20px 0 0 0;
-		}	
+		}
 		#section2 img{
-			margin: 20px 0 0 52px;	
+			margin: 20px 0 0 52px;
 		}
 		#section3 img{
 			bottom: 0px;
@@ -40,51 +32,81 @@
 		}
 		/* Sections
 		 * --------------------------------------- */
+		h1 {
+			font-size: 5em;	
+			font-family: arial,helvetica;
+			color: #fff;
+			margin:0;
+			padding:0;
+		}
 	</style>
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
 		</script>
 	<![endif]-->
-		
+
 	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-ui.js"></script>	
-	
+	<script src="js/jquery-ui.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="js/examples.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			var pepe = $.fn.fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				anchors: ['Start', 'Agenda', '3rdPage', '4thpage', 'lastPage'],
 				navigation: true,
 				navigationPosition: 'right',
-				navigationTooltips: ['Intro', 'Chrome', 'Sublime', 'GitHub']
+				navigationTooltips: ['Start', 'Agenda', 'WADW', 'Chrome', 'Sublime', 'GitHub']
 			});
-			
+
 		});
 	</script>
-
 </head>
 <body>
 
 <div class="section" id="section0">
-	<img src="imgs/Enginerring_Logo_of_PSU.png" alt="The Engineering Faculty" />
-	<h1>Web Application Development Workflow</h1>
-	<div>ราชศักดิ์ บูรณะพาณิชย์กิจ - นักวิชาการคอมพิวเตอร์ ฝ่ายคอมพิวเตอร์ทางวิศวกรรมศาสตร์</div>
-	<div>bratchasak@eng.psu.ac.th</div>
-	<div>พัฒนาวดี ศิวติณฑุโก - นักวิชาการคอมพิวเตอร์ชำนาญการ ฝ่ายคอมพิวเตอร์ทางวิศวกรรมศาสตร์</div>
-	<div>spattana@eng.psu.ac.th</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12"><img src="imgs/Enginerring_Logo_of_PSU.png" alt="The Engineering Faculty" /></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12"><h1>Web Application Development Workflow</h1></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12"><h4>ราชศักดิ์ บูรณะพาณิชย์กิจ - นักวิชาการคอมพิวเตอร์ ฝ่ายคอมพิวเตอร์ทางวิศวกรรมศาสตร์</h4></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12"><h6>bratchasak@eng.psu.ac.th</h6></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12"><h4>พัฒนาวดี ศิวติณฑุโก - นักวิชาการคอมพิวเตอร์ชำนาญการ ฝ่ายคอมพิวเตอร์ทางวิศวกรรมศาสตร์</h4></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12"><h6>spattana@eng.psu.ac.th</h6></div>
+		</div>
+	</div>
 </div>
 
 <div class="section" id="section1">
-	<div class="intro">
-		<h1>Outline</h1>
-		<p>
-			Designed to fit to different screen sizes as well as tablet and mobile devices.
-			<br /><br /><br /><br /><br /><br />
-		</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12"><h1>Agenda</h1></div>
+		</div>
+		<div class="row">
+			<li>a</li>
+			<li>b</li>
+			<li>c</li>li
+			<li>d</li>
+			<li>e</li>
+		</div>
 	</div>
-	<img src="imgs/tablets.png" alt="tablets" />
 </div>
 
 <div class="section" id="section4">
@@ -220,7 +242,7 @@
 			<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
 			<img src="imgs/slider.png" alt="slider" />
 		</div>
-		
+
 	</div>
     <div class="slide">
 		<div class="intro">
